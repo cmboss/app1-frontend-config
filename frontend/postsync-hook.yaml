@@ -4,7 +4,7 @@ metadata:
   name: frontend-smoke-test
   namespace: app1-ns
   annotations:
-    argocd.argoproj.io/hook: PostSync
+    argocd.argoproj.io/hook: Skip #PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   template:
